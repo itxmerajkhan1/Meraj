@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Meraj</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 w-full px-6 md:px-16 py-4 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-semibold text-black">Meraj</div>
+
+      <!-- Hamburger Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-3xl focus:outline-none">&#9776;</button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul id="menu" class="hidden md:flex space-x-8 text-sm font-medium text-black">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="about.html" class="text-blue-600 font-semibold">About</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-6 py-4 text-sm font-medium text-black bg-white">
+      <li><a href="index.html" class="hover:text-blue-600 block">Home</a></li>
+      <li><a href="about.html" class="text-blue-600 font-semibold block">About</a></li>
+      <li><a href="contact.html" class="hover:text-blue-600 block">Contact</a></li>
+      <li><a href="services.html" class="hover:text-blue-600 block">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="image.jpg" alt="Meraj Khan"
+             class="rounded-3xl shadow-xl w-72 h-72 md:w-80 md:h-80 object-cover">
+      </div>
+
+      <!-- Text -->
+      <div>
+        <h2 class="text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Hi, I'm <strong>Meraj Khan</strong> — a passionate Web Developer who crafts responsive and modern websites with clean code and solid UI using Tailwind CSS.
+        </p>
+        <ul class="space-y-2 text-gray-600">
+          <li>✅ Expert in Tailwind CSS</li>
+          <li>✅ Focused on mobile-friendly design</li>
+          <li>✅ Minimal, clean, fast websites</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Extra Paragraph -->
+    <div class="max-w-4xl mx-auto mt-12 text-gray-700 text-base leading-relaxed px-4 md:px-0 text-center ">
+      <p>
+        I specialize in creating websites that not only look great but also perform exceptionally well. My goal is to deliver a seamless user experience while ensuring that the code is maintainable and scalable. Whether you need a personal portfolio, a business website, or an e-commerce platform, I am here to help you achieve your digital goals.
+        Let's work together to bring your ideas to life with modern web technologies and design principles.
+
+        Feel free to reach out to me for any web development projects or collaborations. I am always excited to take on new challenges and create something amazing together!
+
+        Thank you for visiting my portfolio, and I look forward to connecting with you!
+
+
+        <strong><a href="contact.html">Contact me at:</a></strong> 
+      </p>
+    </div>
+  </section>
+
+  <!-- JS for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+

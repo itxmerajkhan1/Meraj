@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Meraj</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 w-full px-6 md:px-16 py-4 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-semibold text-black">Meraj</div>
+
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-3xl focus:outline-none">&#9776;</button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul id="menu" class="hidden md:flex space-x-8 text-sm font-medium text-black">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="contact.html" class="text-blue-600 font-semibold">Contact</a></li>
+        <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-6 py-4 text-sm font-medium text-black bg-white">
+      <li><a href="index.html" class="hover:text-blue-600 block">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-600 block">About</a></li>
+      <li><a href="contact.html" class="text-blue-600 font-semibold block">Contact</a></li>
+      <li><a href="services.html" class="hover:text-blue-600 block">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 text-center">Contact Me</h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-4 text-gray-700">
+          <p>📍 <strong>Location:</strong> Orangi Town, Karachi, Pakistan</p>
+          <p>📞 <strong>Phone:</strong> 0326-5877959 / +92 321 2812203</p>
+          <p>📧 <strong>Email:</strong> itxmerajkhan3109@gmail.com</p>
+          <p>💬 <strong>Message:</strong> Feel free to contact me anytime!</p>
+        </div>
+      
+  
+ <div class="container" style="max-width: 600px; margin: auto; padding: 20px;  " >
+  <h1 ></h1>
+  <form target="_blank" action="https://formsubmit.co/itxmerajkhan3109@gmail.com" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow hover:shadow-2xl hover:scale-[1.02] transition duration-300 " >
+    <div class="form-group">
+      <div class="flex flex-col md:flex-row gap-3">
+        <div class="w-full md:w-1/2">
+        
+          <input type="text" name="name" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Full Name" required>
+        </div>
+        <div class="w-full md:w-1/2">
+          <input type="email" name="email" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group"></div>
+      <textarea placeholder="Your Message" class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" name="message" rows="10" required></textarea>
+    </div>
+   <div class="form-group">
+  <button 
+    type="submit" 
+    class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition w-full"
+    aria-label="Send Message"
+  >
+    Send Message
+  </button>
+</div>
+  </form>
+</div> 
+
+
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- JS for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+
